@@ -14,18 +14,18 @@ int addToTotal(int value)
 
 int main(void)
 {
-    int n;
+    int inputNumber;
     int result = 0;
 
-    scanf("%d", &n);
+    scanf("%d", &inputNumber);
 
-    if (n < 1 || n > 10)
+    if (inputNumber < 1 || inputNumber > 10)
     {
         printf("NG");
         return 0;
     }
 
-    for (int number = 1; number <= n; number++)
+    for (int number = 1; number <= inputNumber; number++)
     {
         result = addToTotal(number * 2);
     }
